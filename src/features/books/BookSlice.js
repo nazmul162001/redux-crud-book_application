@@ -1,9 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
+const {v4: uuidv4} = require("uuid")
 
 const initialBooks = {
   books: [
-    { id: 1, title: 'Harry Potter', author: 'John Doe' },
-    { id: 2, title: 'Dark knight', author: 'Lorry Paige' },
+    { id: uuidv4(), title: 'Harry Potter', author: 'John Doe' },
+    { id: uuidv4(), title: 'Dark knight', author: 'Lorry Paige' },
   ],
 };
 
